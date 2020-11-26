@@ -26,7 +26,8 @@ public class OperationFactory {
     }
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        // 简单工厂模式
+        /*Scanner scanner = new Scanner(System.in);
         System.out.println("请输入第一个数字：");
         String numberA = scanner.nextLine();
         System.out.println("请输入运算符号，目前仅支持 +、-、*、/：");
@@ -36,6 +37,16 @@ public class OperationFactory {
         Operation operation = OperationFactory.createOperation(operate);
         operation.setNumberA(Double.parseDouble(numberA));
         operation.setNumberB(Double.parseDouble(numberB));
-        System.out.println("计算出的结果为：" + operation.getResult());
+        System.out.println("计算出的结果为：" + operation.getResult());*/
+        // 策略模式的组合
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("请输入第一个数字：");
+        String numberA = scanner.nextLine();
+        System.out.println("请输入运算符号，目前仅支持 +、-、*、/：");
+        String operate = scanner.nextLine();
+        System.out.println("请输入第二个数字：");
+        String numberB = scanner.nextLine();
+        OperationContext operationContext = new OperationContext(operate);
+        System.out.println("计算出的结果为：" + operationContext.getResult(numberA, numberB));
     }
 }
