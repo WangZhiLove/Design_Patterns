@@ -1,4 +1,4 @@
-package com.wangzhi.factory;
+package com.wangzhi.simplefactory;
 
 public class DivOperation extends Operation {
     @Override

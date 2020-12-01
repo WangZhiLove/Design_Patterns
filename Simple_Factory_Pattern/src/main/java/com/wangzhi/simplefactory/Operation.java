@@ -1,8 +1,7 @@
-package com.wangzhi.factory;
+package com.wangzhi.simplefactory;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 import lombok.ToString;
 
 @Data

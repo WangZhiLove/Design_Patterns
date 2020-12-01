@@ -1,4 +1,4 @@
-package com.wangzhi.factory;
+package com.wangzhi.simplefactory;
 
 import java.util.Scanner;
 
